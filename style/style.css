@@ -1,0 +1,462 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header styling */
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Space around content */
+    text-align: center; /* Centered text */
+    width: 100%; /* Full width of the viewport */
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Header title styling */
+header h1 {
+    font-size: 2rem; /* Large text size */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Navigation container styling */
+.nav-container {
+    margin-top: 10px; /* Space between header title and navigation */
+}
+
+/* Navigation styling */
+.nav {
+    margin: 0; /* Remove margin to align with header */
+    padding: 0; /* Remove padding */
+}
+
+/* Navigation list styling */
+.nav-list {
+    list-style: none; /* Remove default list bullets */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation item styling */
+.nav-list li {
+    display: inline; /* Display list items inline */
+}
+
+/* Navigation link styling */
+.nav-list a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.1rem; /* Slightly larger text size */
+    padding: 10px 15px; /* Space around text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for navigation links */
+.nav-list a:hover {
+    background-color: rgb(53, 53, 53); /* Darker background on hover */
+    color: #ffffff; /* Change text color on hover */
+    border-radius: 5px;
+    text-decoration: underline; /* Rounded corners */
+}
+
+/* Container for login form */
+.login {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 80px; /* Space below the fixed header */
+}
+
+/* Input fields */
+input[type="email"], input[type="password"], input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button container */
+.btn-container {
+    margin-top: 20px;
+}
+
+/* Add spacing around the "or" text */
+.btn-container p {
+    margin: 10px 0; /* Adjust the vertical margin as needed */
+    font-size: 14px; /* Optional: Adjust font size for better alignment */
+    color: #666; /* Optional: Adjust color for better visibility */
+}
+
+/* Common button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    width: calc(100% - 20px); /* Make buttons full width minus padding */
+    margin: 0 auto; /* Center the buttons */
+}
+
+/* Specific button styles */
+.btn-pink {
+    background-color: #0f7cc5;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #7cc4ee;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+/* Authenticated section */
+.authV {
+    display: flex; /* Hide by default */
+    background-color: #4b67c4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 247, 247, 0.1);
+    padding: 20px;
+    min-width: 400px;
+    min-height: 100px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+/* Show authenticated section when active */
+.authH {
+    display: none;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #286bb3;  
+    font-size: 15px; 
+}
+
+#signOutBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    width: calc(100% - 20px); /* Make buttons full width minus padding */
+    margin: 0 auto; /* Center the buttons */
+    background-color: #0f7cc5;
+    color: white;
+}
+
+#signOutBtn:hover {
+    background-color: #0b71f7;
+}
+
+.profile-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.email {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 20px;
+}
+
+.change-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #007bff;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.change-button:hover {
+    background-color: #ced4da;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 10px;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-footer {
+    text-align: right;
+}
+
+.modal-footer button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-footer button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+/* General reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for dynamic alert box */
+.dynamic-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 1px solid transparent; /* Border color will be set by specific classes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000; /* Ensure it appears above other content */
+    font-family: 'Arial', sans-serif; /* Font for the alert text */
+    font-size: 16px; /* Font size */
+}
+
+/* Style for alert message */
+.dynamic-alert p {
+    margin: 0;
+    flex: 1; /* Allows text to take up available space */
+}
+
+/* Style for close button */
+.close-button {
+    background: transparent; /* No background color */
+    color: inherit; /* Use the color of the parent element */
+    border: none; /* Remove border */
+    font-size: 20px; /* Size of the close button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.close-button:hover {
+    color: #d9534f; /* Slightly lighter red on hover */
+}
+
+/* Success alert styling */
+.success-alert {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border-color: #c3e6cb; /* Light green border */
+}
+
+/* Error alert styling */
+.error-alert {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border-color: #f5c6cb; /* Light red border */
+}
+/* Container for file upload */
+.upload-container {
+    background-color: #ffffff; /* White background for the container */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    max-width: 400px; /* Maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally */
+    text-align: center; /* Center text inside the container */
+}
+
+/* Heading styling */
+.upload-container h2 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #333; /* Dark grey color for the text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* File input styling */
+.upload-container input[type="file"] {
+    display: inline-block; /* Inline block for better alignment */
+    padding: 10px; /* Space inside the file input */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    margin-bottom: 10px; /* Space below the file input */
+    font-size: 16px; /* Font size for the file input */
+}
+
+/* File input button styling */
+.upload-container input[type="file"]::-webkit-file-upload-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px; /* Space inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor for the button */
+}
+
+.upload-container input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Status message styling */
+.upload-container #status {
+    font-size: 14px; /* Font size for the status message */
+    margin-top: 10px; /* Space above the status message */
+    color: #333; /* Default text color */
+}
+
+/* Success message styling */
+.upload-container #status.success {
+    color: #28a745; /* Green color for success messages */
+}
+
+/* Error message styling */
+.upload-container #status.error {
+    color: #dc3545; /* Red color for error messages */
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+img:hover{
+    width: 1000px;
+    height: 1000px;
+}

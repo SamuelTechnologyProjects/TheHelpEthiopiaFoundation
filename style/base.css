@@ -1,0 +1,185 @@
+/* base.css */
+
+/* Basic reset for margins and paddings */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Header title */
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation styling */
+.nav {
+    text-align: center;
+    height: fit-content;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Sign Up / Sign In link styling */
+.signup {
+    color: #fff;
+    background: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hover effect for navigation links */
+.nav-list a:hover,
+.signup:hover {
+    text-decoration: underline;
+}
+.reset-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 30%;
+    width: 30vw;
+    max-width: 400px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+.profile-pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid rgb(54, 143, 216);
+    cursor: pointer;
+    object-fit: cover; /* Ensure image covers the circle */
+}
+.profile-name {
+    display: none;
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: center;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+.profile-container:hover .profile-name {
+    display: block;
+}
+.profile-container button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.profile-container button:hover {
+    background-color: #0056b3;
+}
+/* Footer styles */
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-contacts {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.footer a {
+    color: #f4f4f4; /* Light color for links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 0.9em;
+    }
+}
+.title{
+    color: #fff;
+}
+.t1{
+    color:rgb(0, 0, 0);
+}

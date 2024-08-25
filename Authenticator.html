@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css"/>
+
+    <script type="module" src="./scripts/app.js"></script>
+</head>
+
+<body>
+    <header class="authH" id="hder">
+        <h1>Help Ethiopia</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Mission.html">Mission</a></li>
+                <li><a href="Donate.html">Donate</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="login" id="login">
+        <input type="email" placeholder="Email" id="email"><br>
+        <input type="password" placeholder="Password" id="password"> <br><br>
+        <div class="btn-container">
+            <button class="btn btn-pink" id="signUpBtn">Sign Up</button><br>
+
+            <p>or</p><br>
+            <button class="btn btn-pink" id="signInBtn">Sign In</button>
+            <p><a class="forgot-password" href="ResetManager.html">Fotgot Password</a> </p>
+        </div>
+        <p id="validationMessage"></p>
+    </div>
+    <div class="authH" id="aut">
+      
+        <div class="profile-container">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-picture" id="profilePic">
+            <div class="change-button" id="changePicBtn">Change Picture</div>
+            <div class="username" id="usernameHolder">John Doe</div>
+            <div class="change-button" id="changeUsernameBtn">Change Username</div>
+            <div class="email" id="emailHolder">john.doe@example.com</div>
+            <div class="change-button" id="ChangePassword"><a href="ResetManager.html">ChangePassword</a></div>
+            <button class="btn btn-white" id="signOutBtn">Sign Out</button>
+        </div>
+
+        <!-- Modal for changing profile picture -->
+        <div id="changePicModal" class="modal">
+            <div class="modal-content">
+                <div class="upload-container">
+                    <h2>Upload a File</h2>
+                    <input type="file" id="fileInput"  accept="image/*"/>
+                    <p id="status"></p>
+                </div>
+                <span class="close" id="closePicModal">&times;</span>
+                <div class="modal-header">
+                    <h2>Change Profile Picture</h2>
+                </div>
+                <div class="modal-footer">
+                    <button id="savePicBtn">Save</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for changing username -->
+        <div id="changeUsernameModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeUsernameModal">&times;</span>
+                <div class="modal-header">
+                    <h2>Change Username</h2>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="newUsername" placeholder="Enter new username">
+                </div>
+                <div class="modal-footer">
+                    <button id="saveUsernameBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
